@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Doran ERP - Gest&atilde;o de servi&ccedil;os</title>
+    <link rel="icon" type="image/ico" href="imagens/favicon2.ico" />
+    <link rel="icon" type="shortcut icon" href="imagens/favicon2.ico" />
+    <link rel="stylesheet" type="text/css" href="scripts/resources/css/ext-all.css" />
+
+    <script type="text/javascript" src="scripts/adapter/ext/ext-base.js"></script>
+
+    <script type="text/javascript" src="scripts/ext-all.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="scripts/resources/css/xtheme-gray.css" />
+    <link rel="stylesheet" type="text/css" href="Estilos/FaTh2.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/examples/ux/css/Spinner.css" />
+
+    <script type="text/javascript" src="scripts/examples/ux/RowExpander.js"></script>
+
+    <script type="text/javascript" src="scripts/examples/ux/Spinner.js"></script>
+
+    <script type="text/javascript" src="scripts/examples/ux/SpinnerField.js"></script>
+
+    <!-- page specific -->
+
+    <script type="text/javascript" src="scripts/examples/ux/spinner.js"></script>
+
+    <style type="text/css">
+        html, body
+        {
+            border-style: none;
+            border-color: inherit;
+            border-width: 0;
+            font: normal 12px Tahoma;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+        p
+        {
+            margin: 5px;
+        }
+        .settings
+        {
+            background-image: url(scripts/examples/shared/icons/fam/folder_wrench.png);
+        }
+        .nav
+        {
+            background-image: url(scripts/examples/shared/icons/fam/folder_go.png);
+        }
+        .x-tree-node div.Th2Menu
+        {
+            font: Tahoma 14px;
+        }
+    </style>
+
+    <script type="text/javascript" src="scripts/examples/shared/examples.js"></script>
+
+</head>
+<body>
+    <div id="west" class="x-hide-display">
+    </div>
+    <div id="center2" class="x-hide-display">
+        <a id="hideit" href="#"></a>
+    </div>
+    <div id="center1" class="x-hide-display">
+    </div>
+</body>
+</html>
+
+<script type="text/javascript" src="scripts/Th2_Ajax.js"></script>
+
+<script type="text/javascript" src="scripts/classes.js"></script>
+
+<script type="text/javascript" src="scripts/ext-lang-pt_BR.js"></script>
+
+<script type="text/javascript" src="scripts/Th2_FieldMascara.js"></script>
+
+<script type="text/javascript" src="scripts/Th2PagingToolbar.js"></script>
+
+<script type="text/javascript" src="scripts/Th2_Query.js"></script>
+
+<script type="text/javascript" src="scripts/Th2_Grid.js"></script>
+
+<script type="text/javascript" src="scripts/Th2_Alerta_Email.js"></script>
+
+<script type="text/javascript" src="scripts/Th2_HTMLEditor.js"></script>
+
+<script type="text/javascript" src="scripts/erros.js"></script>
+
+<script type="text/javascript" src="scripts/tb_emitente.js"></script>
+
+<script type="text/javascript" src="scripts/lembrete.js"></script>
+
+<script type="text/javascript" src="scripts/janelaEmailConta.js"></script>
+
+<script type="text/javascript" src="scripts/janela_envio_email.js"></script>
+
+<script type="text/javascript" src="scripts/janela_corpo_email.js"></script>
+
+<script type="text/javascript" src="scripts/aba_novo_email.js"></script>
+
+<script type="text/javascript" src="scripts/tb_email_spam.js"></script>
+
+<script type="text/javascript" src="scripts/tb_email_contato.js"></script>
+
+<script type="text/javascript" src="scripts/tb_email_grupo.js"></script>
+
+<script type="text/javascript" src="scripts/webmail.js"></script>
+
+<script type="text/javascript" src="scripts/tb_email_pasta.js"></script>
+
+<script type="text/javascript" src="scripts/erp_servicos.js"></script>
+
+<script type="text/javascript" src="scripts/auditoria.js"></script>
+
+<script type="text/javascript" src="scripts/tb_limite.js"></script>
+
+<script type="text/javascript" src="scripts/tb_ciclista.js"></script>
+
+<script type="text/javascript" src="scripts/tabela_comissao.js"></script>
+
+<script type="text/javascript" src="scripts/tb_vendedor.js"></script>
+
+<script type="text/javascript" src="scripts/tb_cond_pagto.js"></script>
+
+<script type="text/javascript" src="scripts/BUSCA_municipio.js"></script>
+
+<script type="text/javascript" src="scripts/BuscaTB_CLIENTE.js"></script>
+
+<script type="text/javascript" src="scripts/CreditoCliente.js"></script>
+
+<script type="text/javascript" src="scripts/tb_cliente_contato.js"></script>
+
+<script type="text/javascript" src="scripts/tb_regiao.js"></script>
+
+<script type="text/javascript" src="scripts/tb_cliente_documento.js"></script>
+
+<script type="text/javascript" src="scripts/tb_cliente.js"></script>
+
+<script type="text/javascript" src="scripts/tb_acessos.js"></script>
+
+<script type="text/javascript" src="scripts/aba_desenho_orcamento.js"></script>
+
+<script type="text/javascript" src="scripts/tb_custo_venda.js"></script>
+
+<script type="text/javascript" src="scripts/custo_venda_item_orcamento.js"></script>
+
+<script type="text/javascript" src="scripts/Conjunto_Venda.js"></script>
+
+<script type="text/javascript" src="scripts/tb_complemento_produto.js"></script>
+
+<script type="text/javascript" src="scripts/janela_itens_orcamento.js"></script>
+
+<script type="text/javascript" src="scripts/Entregas_Programadas_Orcamento.js"></script>
+
+<script type="text/javascript" src="scripts/adm_orcamentos.js"></script>
+
+<script type="text/javascript" src="scripts/tb_item_orcamento.js"></script>
+
+<script type="text/javascript" src="scripts/tb_orcamento.js"></script>
+
+<script type="text/javascript" src="scripts/tb_config_vendas.js"></script>
+
+<script type="text/javascript" src="scripts/matriz_orcamento.js"></script>
+
+<script type="text/javascript" src="scripts/matriz_pedido_venda.js"></script>
+
+<script type="text/javascript" src="scripts/matriz_pedido_compra.js"></script>
+
+<script type="text/javascript" src="scripts/estatisticas_orcamentos.js"></script>
+
+<script type="text/javascript" src="scripts/tb_status_pedido.js"></script>
+
+<script type="text/javascript" src="scripts/tb_status_usuario.js"></script>
+
+<script type="text/javascript" src="scripts/tb_status_pedido_compra.js"></script>
+
+<script type="text/javascript" src="scripts/custo_item_pedido.js"></script>
+
+<script type="text/javascript" src="scripts/Notas_Pedido_Venda.js"></script>
+
+<script type="text/javascript" src="scripts/janela_solicitacao_estoque.js"></script>
+
+<script type="text/javascript" src="scripts/Busca_Beneficiamento.js"></script>
+
+<script type="text/javascript" src="scripts/janela_itens_compra.js"></script>
+
+<script type="text/javascript" src="scripts/consulta_estoque_x_pedido.js"></script>
+
+<script type="text/javascript" src="scripts/buscaProdutos.js"></script>
+
+<script type="text/javascript" src="scripts/janela_filtro_status_pedido_venda.js"></script>
+
+<script type="text/javascript" src="scripts/custo_e_venda.js"></script>
+
+<script type="text/javascript" src="scripts/Pedido_Venda.js"></script>
+
+<script type="text/javascript" src="scripts/dados_faturamento_pedido.js"></script>
+
+<script type="text/javascript" src="scripts/janela_Local_Material_Expedido.js"></script>
+
+<script type="text/javascript" src="scripts/faturamento_pedido.js"></script>
+
+<script type="text/javascript" src="scripts/Busca_Fornecedor.js"></script>
+
+<script type="text/javascript" src="scripts/tb_beneficiamento.js"></script>
+
+<script type="text/javascript" src="scripts/auditoriaPedidoVenda.js"></script>
+
+<script type="text/javascript" src="scripts/Estatisticas_Qualidade_Vendas.js"></script>
+
+<script type="text/javascript" src="scripts/cotacao_compra.js"></script>
+
+<script type="text/javascript" src="scripts/UltimasCompras.js"></script>
+
+<script type="text/javascript" src="scripts/janela_itens_nao_fechados.js"></script>
+
+<script type="text/javascript" src="scripts/Monitor_Cotacao.js"></script>
+
+<script type="text/javascript" src="scripts/cotacao_fornecedor.js"></script>
+
+<script type="text/javascript" src="scripts/Recebimento_Mercadoria.js"></script>
+
+<script type="text/javascript" src="scripts/Notas_Pedido_Compra.js"></script>
+
+<script type="text/javascript" src="scripts/janela_pedido_venda.js"></script>
+
+<script type="text/javascript" src="scripts/janela_itens_venda.js"></script>
+
+<script type="text/javascript" src="scripts/janela_filtro_status_pedido_compra.js"></script>
+
+<script type="text/javascript" src="scripts/tb_rnc.js"></script>
+
+<script type="text/javascript" src="scripts/tb_avaliacao_item_compra.js"></script>
+
+<script type="text/javascript" src="scripts/adm_pedido_compra.js"></script>
+
+<script type="text/javascript" src="scripts/pedido_compra.js"></script>
+
+<script type="text/javascript" src="scripts/UltimasVendas.js"></script>
+
+<script type="text/javascript" src="scripts/Estatisticas_Qualidade_Compras.js"></script>
+
+<script type="text/javascript" src="scripts/Posicao_Estoque.js"></script>
+
+<script type="text/javascript" src="scripts/tb_manutencao_veiculo.js"></script>
+
+<script type="text/javascript" src="scripts/tb_veiculo_frota.js"></script>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.1&sensor=false&language=pt-BR"></script>
+
+<script type="text/javascript" src="scripts/google_maps.js"></script>
+
+<script type="text/javascript" src="scripts/tb_pre_roteiro.js"></script>
+
+<script type="text/javascript" src="scripts/faturamento_placa.js"></script>
+
+<script type="text/javascript" src="scripts/tb_material.js"></script>
+
+<script type="text/javascript" src="scripts/tb_propriedade_mecanica.js"></script>
+
+<script type="text/javascript" src="scripts/tb_acabamento.js"></script>
+
+<script type="text/javascript" src="scripts/editor_rnc.js"></script>
+
+<script type="text/javascript" src="scripts/tb_status_rnc.js"></script>
+
+<script type="text/javascript" src="scripts/tb_acao_corretiva_rnc.js"></script>
+
+<script type="text/javascript" src="scripts/tb_ocorrencia_rnc.js"></script>
+
+<script type="text/javascript" src="scripts/janela_Local_Material_Separacao.js"></script>
+
+<script type="text/javascript" src="scripts/Pedido_Venda_Beneficiamento.js"></script>
+
+<script type="text/javascript" src="scripts/janela_CERTIFICADOS.js"></script>
+
+<script type="text/javascript" src="scripts/Certificado.js"></script>
+
+<script type="text/javascript" src="scripts/Pedido_Venda_Certificado.js"></script>
+
+<script type="text/javascript" src="scripts/Estatisticas_RNC.js"></script>
+
+<script type="text/javascript" src="scripts/consulta_rnc.js"></script>
+
+<script type="text/javascript" src="scripts/sugestao_compra.js"></script>
+
+<script type="text/javascript" src="scripts/tb_separador.js"></script>
+
+<script type="text/javascript" src="scripts/Expedicao_de_Produtos.js"></script>
+
+<script type="text/javascript" src="scripts/Etiqueta_Separacao.js"></script>
+
+<script type="text/javascript" src="scripts/tb_transportadora.js"></script>
+
+<script type="text/javascript" src="scripts/compras_atrasadas.js"></script>
+
+<script type="text/javascript" src="scripts/tb_parametro_custo.js"></script>
+
+<script type="text/javascript" src="scripts/Relatorio_Centro_Custo.js"></script>
+
+<script type="text/javascript" src="scripts/Relatorio_Vendas.js"></script>
+
+<script type="text/javascript" src="scripts/sugestao_armazenagem_estoque.js"></script>
+
+<script type="text/javascript" src="scripts/Relatorio_Pontuacao_Fornecedores.js"></script>
+
+<script type="text/javascript" src="scripts/Calendario.js"></script>
+
+<script type="text/javascript" src="scripts/Rastreabilidade_de_Produto.js"></script>
+
+<script type="text/javascript" src="scripts/tb_servico.js"></script>
+
+<script type="text/javascript" src="scripts/tb_nota_saida1.js"></script>
+
+<script type="text/javascript" src="scripts/tb_item_nota_saida.js"></script>
+
+<script type="text/javascript" src="scripts/tb_nota_fiscal_saida.js"></script>
+
+<script type="text/javascript" src="scripts/tb_banco.js"></script>
+
+<script type="text/javascript" src="scripts/tb_conta_corrente.js"></script>
+
+<script type="text/javascript" src="scripts/tb_plano_contas.js"></script>
+
+<script type="text/javascript" src="scripts/tb_financeiro.js"></script>
+
+<script type="text/javascript" src="scripts/posicoes_financeiras.js"></script>
