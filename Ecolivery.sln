@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecolivery", "Ecolivery.csproj", "{9215DC4B-8279-4935-971F-562050D17DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doran_ERP_Servicos_ORM", "Doran_Servicos_ORM\Doran_ERP_Servicos_ORM.csproj", "{FDDC1FF2-6BBC-4475-A8CD-62790470FC0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doran_Servicos_Login", "Doran_Servicos_Login\Doran_Servicos_Login.csproj", "{2E735213-F0D7-4C87-8690-1285AF0B6B0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doran_ERP_Servicos_Email", "Doran_ERP_Servicos_Email\Doran_ERP_Servicos_Email.csproj", "{9A315957-2CA5-43CA-99F1-339BD30C72CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doran_ERP_Servicos_Calendario", "Doran_ERP_Servicos_Calendario\Doran_ERP_Servicos_Calendario.csproj", "{5620ADCE-6530-4128-967B-03C38758707C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doran_ERP_Servicos_Mobile", "Doran_ERP_Servicos_Mobile\Doran_ERP_Servicos_Mobile.csproj", "{504425A1-5049-4676-8302-BCC2CEFA3B97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9215DC4B-8279-4935-971F-562050D17DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9215DC4B-8279-4935-971F-562050D17DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9215DC4B-8279-4935-971F-562050D17DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9215DC4B-8279-4935-971F-562050D17DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDC1FF2-6BBC-4475-A8CD-62790470FC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDC1FF2-6BBC-4475-A8CD-62790470FC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDC1FF2-6BBC-4475-A8CD-62790470FC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDC1FF2-6BBC-4475-A8CD-62790470FC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E735213-F0D7-4C87-8690-1285AF0B6B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E735213-F0D7-4C87-8690-1285AF0B6B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E735213-F0D7-4C87-8690-1285AF0B6B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E735213-F0D7-4C87-8690-1285AF0B6B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A315957-2CA5-43CA-99F1-339BD30C72CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A315957-2CA5-43CA-99F1-339BD30C72CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A315957-2CA5-43CA-99F1-339BD30C72CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A315957-2CA5-43CA-99F1-339BD30C72CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5620ADCE-6530-4128-967B-03C38758707C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5620ADCE-6530-4128-967B-03C38758707C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5620ADCE-6530-4128-967B-03C38758707C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5620ADCE-6530-4128-967B-03C38758707C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{504425A1-5049-4676-8302-BCC2CEFA3B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{504425A1-5049-4676-8302-BCC2CEFA3B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{504425A1-5049-4676-8302-BCC2CEFA3B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{504425A1-5049-4676-8302-BCC2CEFA3B97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
